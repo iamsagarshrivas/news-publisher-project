@@ -53,6 +53,9 @@
   text-align: left;
   padding:10px 0;
 }
+.App-header .search .search-container ul li:hover{
+background-color: rgba(0,0,0, 0.1);
+}
 .App-header .search .search-container ul a{
   color: #282c34;
 
