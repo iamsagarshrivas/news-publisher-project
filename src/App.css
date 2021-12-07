@@ -15,17 +15,83 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 3vmin);
   color: white;
+  position: relative;
 }
+
+.App-header .search{
+  position: absolute;
+  right: 30px;
+  width: 250px;
+  top: 0;
+}
+
+.App-header .search .search-container{
+  position: relative;
+
+}
+.App-header .search .search-container ul{
+  position: absolute;
+  top: 20px;
+  background-color: whitesmoke;
+  width: 200px;
+  max-width: 200px;
+  right: 0px;
+  border-radius: 10px;
+  max-height: 300px;
+  overflow: auto;
+}
+.App-header .search .search-container ul li{
+  list-style-type: none;
+  font-size: medium;
+  text-align: left;
+  padding:10px 0;
+}
+.App-header .search .search-container ul a{
+  color: #282c34;
+
+}
+
+
 
 .App-link {
   color: #61dafb;
+}
+a{
+  text-decoration: none;
+}
+
+.publishers a{
+  color: #282c34;
+  font-size: 20px;
+  border: 1px solid #282c34;
+  display: inline-block;
+  margin: 10px;
+  padding: 6px;
+  border-radius: 10px;
+
+}
+
+.card-container .card{
+  border: 1px solid #282c34;
+  margin: 2rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card-container .card a h3.title{
+  color: #282c34;
+}
+
+.card .host{
+  display: flex;
+  justify-content: space-between;
 }
 
 @keyframes App-logo-spin {
